@@ -19,42 +19,6 @@
 #include <set>
 #include "_map.h"
 //#include <ntddk.h>
-#define FUNCTION(name) name##f("123")
-
-class test
-{
-public:
-	class tt
-		:public lsd::NoCopy
-	{
-	public:
-		int c;
-		
-
-	};
-	test(){}
-	test(const int& t,const int& s):c(t),a(s) {}
-	~test(){}
-	void dosome()
-	{
-		c += 10;
-	}
-	int c;
-	int a;
-	char* ll;
-	char* cc;
-	std::vector<int> bb;
-};
-template <typename T>
-void change_int(T a)
-{
-	a = 10;
-}
-template <typename T>
-T& get_ref(T& t)
-{
-	return static_cast<T&>(t);
-}
 int main()
 {
 	std::map<int, int> map;
